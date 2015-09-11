@@ -1,6 +1,8 @@
 var canvas, context;
 var samples = document.querySelector('#color-samples');
 
+var SAMPLE_SIZE = 32;
+
 function init(){
     canvas = document.getElementById('colors');
 
@@ -8,7 +10,7 @@ function init(){
 
     // draw image on canvas
     var img = new Image();
-    img.src = 'img/mcd.png'
+    img.src = 'img/puppy2.jpeg'
     img.onload = function(){
         canvas.width = this.width;
         canvas.height = this.height;
@@ -17,8 +19,7 @@ function init(){
 
         var colors = colorQuant(imageData);
 
-        console.log(colors)
-
+        // list colors
         for(var c of colors){
             var elem = document.createElement('div');
             elem.className = "color-box"
@@ -32,7 +33,7 @@ function init(){
 
 
 function colorQuant(imageData){
-    var paletteSize = 8;
+    var paletteSize = SAMPLE_SIZE;
     var bucketColors = new Array(paletteSize);
 
     var buckets = [];
@@ -87,7 +88,6 @@ function averageColor(pixels) {
 function getAverageColor(bucket) {
     bucket.map(averageColor)
 }
-
 
 function splitBucket(bucket){
     var lowerHalf = bucket.slice(Math.floor(bucket.length/2), bucket.length);
@@ -162,4 +162,4 @@ function assert(a, b){
 }
 
 init();
-test();
+// test();
