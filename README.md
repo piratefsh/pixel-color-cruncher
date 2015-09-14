@@ -14,11 +14,18 @@ Pixel cruncher is a WebWorker.
     
     pixelCruncher.addEventListener('message', function(e){
         var colors = e.data;
-        displayColors(colors);
+
+        // returns an array of [r,g,b] colors that you can now use
+        doSomethingWith(colors);
     });
 
     // spawn worker thread to crunch pixels. num_colors must be multiple of 2
     pixelCruncher.postMessage({data: imageData, num_colors: 16});
 
 
+
+
 Refer to `js/main.js` for a usage example. 
+
+## Credits
+Shoutout to [Giorgio](https://github.com/ppold) who paired on me with this!
