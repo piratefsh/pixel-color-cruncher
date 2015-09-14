@@ -2,6 +2,9 @@
 
 Given an image, gives you the a palette of colors from it. A [median-cut color quantization](https://www.wikiwand.com/en/Median_cut) implementation. 
 
+## Demo
+See it in action here: [demo!](http://piratefsh.github.io/pixel-color-cruncher/)
+
 ## To use
 
 Pixel cruncher is a WebWorker. 
