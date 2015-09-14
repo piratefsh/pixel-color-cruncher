@@ -18,7 +18,7 @@ function init(){
         var imageData = context.getImageData(0,0,canvas.width,canvas.height).data;
 
         // create web worker
-        var pixelCruncher = new Worker('/js/pixel-cruncher.js');
+        var pixelCruncher = new Worker('js/pixel-cruncher.js');
         pixelCruncher.addEventListener('message', function(e){
             var colors = e.data;
             displayColors(colors);
