@@ -1,8 +1,8 @@
 {
-  "name": "image-processing",
+  "name": "pixel-color-cruncher",
   "version": "1.0.0",
-  "description": "Image Processing Experiments",
-  "main": "index.html",
+  "description": "Given an image, find a palette of colors. Uses a median-cut algorithm",
+  "main": "js/pixel-cruncher.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +13,19 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-serve": "^0.1.6"
   },
-  "dependencies": {
-  }
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/piratefsh/pixel-color-cruncher.git"
+  },
+  "keywords": [
+    "color",
+    "palette",
+    "median-cut",
+    "pixels"
+  ],
+  "bugs": {
+    "url": "https://github.com/piratefsh/pixel-color-cruncher/issues"
+  },
+  "homepage": "https://github.com/piratefsh/pixel-color-cruncher"
 }
