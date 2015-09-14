@@ -1,6 +1,6 @@
 {
   "name": "pixel-color-cruncher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Given an image, find a palette of colors. Uses a median-cut algorithm",
   "main": "js/pixel-cruncher.js",
   "scripts": {
