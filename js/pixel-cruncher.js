@@ -130,8 +130,10 @@ function assert(a, b){
 }
 
 //worker stuff
-self.addEventListener('message', function(e){
-    var imageData = e.data;
+self.addEventListener('crunch-pixels', function(e){
+    var imageData = e.data.pixels;
+    SAMPLE_SIZE = e.data.num_pixels;
+    
     var colors = colorQuant(imageData);
     self.postMessage(colors);
 });

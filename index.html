@@ -1,45 +1,63 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="">
+    <![endif]-->
+    <!--[if IE 7]>
+    <html class="no-js lt-ie9 lt-ie8" lang="">
+        <![endif]-->
+        <!--[if IE 8]>
+        <html class="no-js lt-ie9" lang="">
+            <![endif]-->
+            <!--[if gt IE 8]>
+            <!-->
+            <html class="no-js" lang="">
+                <!--<![endif]-->
+<head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                <title></title>
+                <meta name="description" content="">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
+                <link rel="stylesheet" href="css/bootstrap.min.css">
+                <style>
             body {
                 padding-top: 50px;
                 padding-bottom: 20px;
             }
         </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+                <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+                <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+                <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+                <!--[if lt IE 8]>
+                <p class="browserupgrade">
+                    You are using an <strong>outdated</strong>
+                    browser. Please
+                    <a href="http://browsehappy.com/">upgrade your browser</a>
+                    to improve your experience.
+                </p>
+                <![endif]-->
+                <div class="container">
+                    <h1>Pixel color cruncher demo</h1>
+                    <p>Get a color palette from an image. Using the <a href="https://www.wikiwand.com/en/Median_cut" target="_blank">median-cut algorithm.</a></p>
 
-        <canvas id="colors"></canvas>
-        <div id="color-samples"></div>
-        <hr>
+                    <canvas id="colors"></canvas>
+                    <div id="color-samples"></div>
 
-      <footer>
-        <p>&copy; Company 2015</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+                </div>
+
+                <a href="https://github.com/piratefsh/color-sampling"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+            </div>
+            <!-- /container -->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="//localhost:9011/livereload.js"></script>
+        <script src="//localhost:9011/livereload.js"></script>
         <script src="js/pixel-cruncher.js"></script>
         <script src="js/main.js"></script>
-    </body>
-</html>
+</body>
+    </html>

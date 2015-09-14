@@ -8,20 +8,24 @@ function init(){
 
     // draw image on canvas
     var img = new Image();
-    img.src = 'img/puppy3.jpeg'
+    img.src = 'img/puppy2.jpeg'
     img.onload = function(){
         canvas.width = this.width;
         canvas.height = this.height;
         context.drawImage(this, 0, 0);
+
+        // get pixel data of image on canvas
         var imageData = context.getImageData(0,0,canvas.width,canvas.height).data;
 
-        // spawn worker thread to CRUNCH pixels
+        // create web worker
         var pixelCruncher = new Worker('/js/pixel-cruncher.js');
-        pixelCruncher.addEventListener('message', function(e){
+        pixelCruncher.addEventListener('crunch-pixels', function(e){
             var colors = e.data;
             displayColors(colors);
         });
-        pixelCruncher.postMessage(imageData);
+
+        // spawn worker thread to CRUNCH pixels. num_colors must be multiple of 2
+        pixelCruncher.postMessage({pixels: imageData, num_colors: 16});
     }
 }
 
